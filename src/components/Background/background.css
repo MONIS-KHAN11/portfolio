@@ -1,0 +1,110 @@
+.background {
+  position: relative;
+  min-height: 100vh;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  overflow: hidden;
+
+  background-color: #020617;
+
+  transition:
+    background-color 0.5s ease,
+    filter 0.5s ease;
+}
+
+
+html.dark .background {
+  background-color: #020617;
+  background-blend-mode: normal;
+}
+
+html:not(.dark) .background {
+  background-color: #eef6ff;
+
+  background-blend-mode: screen;
+
+  transition:
+    background-color 0.5s ease,
+    filter 0.5s ease;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.35),
+    rgba(0, 0, 0, 0.2)
+  );
+
+  backdrop-filter: blur(12px);
+
+  z-index: 1;
+
+  transition:
+    background 0.5s ease,
+    backdrop-filter 0.5s ease;
+}
+
+html:not(.dark) .overlay {
+  background: linear-gradient(
+    135deg,
+    rgba(0, 47, 88, 0.58),
+    rgba(10, 21, 11, 0.52),
+    rgba(21, 9, 2, 0.58)
+  );
+
+  backdrop-filter: blur(12px);
+}
+
+.content {
+  position: relative;
+  z-index: 5;
+}
+
+.glow {
+  position: absolute;
+
+  width: 700px;
+  height: 700px;
+
+  border-radius: 50%;
+
+  filter: blur(170px);
+
+  opacity: 0.35;
+
+  transition:
+    background 0.5s ease,
+    opacity 0.5s ease;
+}
+
+.glow-left {
+  top: 8%;
+  left: -12%;
+
+  background: #07286e;
+}
+
+.glow-right {
+  bottom: 10%;
+  right: -12%;
+
+  background: #000000;
+}
+
+html:not(.dark) .glow-left {
+  background: #38bdf8;
+  opacity: 0.16;
+}
+
+html:not(.dark) .glow-right {
+  background: #818cf8;
+  opacity: 0.14;
+}

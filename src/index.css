@@ -1,0 +1,182 @@
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  transition:
+    background-color 0.4s ease,
+    color 0.4s ease;
+}
+
+@media (min-width: 768px) {
+  body {
+    cursor: none;
+  }
+
+  a,
+  button,
+  img,
+  input,
+  textarea,
+  select {
+    cursor: none;
+  }
+}
+
+@media (max-width: 767px) {
+  body,
+  a,
+  button,
+  img,
+  input,
+  textarea,
+  select {
+    cursor: auto;
+  }
+}
+
+button,
+a,
+img,
+nav,
+.no-select {
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+span,
+li {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+input,
+textarea,
+select {
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html.dark body {
+  background-color: #020617;
+  color: white;
+}
+
+html:not(.dark) body {
+  background-color: #f8fafc;
+  color: #0f172a;
+}
+
+@keyframes orbitReverse {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+.orbit-reverse {
+  animation: orbitReverse 4s linear infinite;
+}
+
+/* ================================
+   PREMIUM CARD HOVER
+================================ */
+
+@media (hover: hover) and (pointer: fine) {
+  .premium-card {
+    position: relative;
+    overflow: hidden;
+    transition:
+      transform 0.35s ease,
+      border-color 0.35s ease,
+      box-shadow 0.35s ease,
+      background-color 0.35s ease;
+  }
+
+  .premium-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(
+      circle at 50% 0%,
+      rgba(34, 211, 238, 0.12),
+      transparent 55%
+    );
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.35s ease;
+  }
+
+  .premium-card:hover {
+    transform: translateY(-6px);
+    border-color: rgba(34, 211, 238, 0.35);
+    box-shadow:
+      0 15px 40px rgba(0, 0, 0, 0.18),
+      0 0 25px rgba(34, 211, 238, 0.08);
+  }
+
+  .premium-card:hover::before {
+    opacity: 1;
+  }
+
+  .premium-card-icon {
+    transition:
+      transform 0.35s ease,
+      filter 0.35s ease;
+  }
+
+  .premium-card:hover .premium-card-icon {
+    transform: scale(1.08);
+    filter: drop-shadow(0 0 8px rgba(34, 211, 238, 0.45));
+  }
+}
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 767px) {
+  .premium-card {
+    transform: none !important;
+  }
+
+  .premium-card:hover {
+    transform: none !important;
+    box-shadow: none;
+  }
+
+  .premium-card::before {
+    display: none;
+  }
+}
