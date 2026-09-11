@@ -101,18 +101,13 @@ function SplashScreen({ onComplete }) {
         </div>
 
         {/* Name */}
-        <div
-          className={`splash-name ${glitch ? "name-glitch" : ""}`}
-          data-text={text}
-        >
+        <div className={`splash-name ${glitch ? "name-glitch" : ""}`} data-text={text}>
           {text}
           <span className="cursor-line">|</span>
         </div>
 
         {/* Role */}
-        <div className={`splash-role ${showRole ? "role-visible" : ""}`}>
-          FULL STACK DEVELOPER
-        </div>
+        <div className={`splash-role ${showRole ? "role-visible" : ""}`}>FULL STACK DEVELOPER</div>
       </div>
 
       {/* CRT scan lines */}

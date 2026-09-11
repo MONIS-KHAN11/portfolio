@@ -24,8 +24,7 @@ function CursorGlow() {
       style={{
         left: position.x - 175,
         top: position.y - 175,
-        background:
-          "radial-gradient(circle, rgba(59,130,246,0.35) 0%, rgba(6,182,212,0.18) 40%, transparent 70%)",
+        background: "radial-gradient(circle, rgba(59,130,246,0.35) 0%, rgba(6,182,212,0.18) 40%, transparent 70%)",
         filter: "blur(60px)",
       }}
     />

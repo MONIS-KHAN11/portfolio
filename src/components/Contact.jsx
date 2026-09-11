@@ -7,8 +7,7 @@ import ScrollReveal from "./ScrollReveal";
 function Contact() {
   const location = useLocation();
 
-  const isQuoteRequest =
-    new URLSearchParams(location.search).get("quote") === "true";
+  const isQuoteRequest = new URLSearchParams(location.search).get("quote") === "true";
 
   const [isSubmitting, setIsSubmitting] = useState(false);
 
@@ -77,21 +76,18 @@ function Contact() {
     try {
       setIsSubmitting(true);
 
-      const response = await fetch(
-        "https://formsubmit.co/ajax/Khanmonis77929@gmail.com",
-        {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-            Accept: "application/json",
-          },
-          body: JSON.stringify({
-            ...formData,
-            _subject: "New Portfolio Contact Message",
-            _template: "table",
-          }),
+      const response = await fetch("https://formsubmit.co/ajax/Khanmonis77929@gmail.com", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
         },
-      );
+        body: JSON.stringify({
+          ...formData,
+          _subject: "New Portfolio Contact Message",
+          _template: "table",
+        }),
+      });
 
       if (!response.ok) {
         throw new Error("Message could not be sent.");
@@ -126,19 +122,12 @@ function Contact() {
         <ScrollReveal direction="up">
           <div className="text-center mb-8">
             <h1
-              className="
-                text-4xl md:text-5xl
-                font-bold
-                text-slate-900
-                dark:text-white
-              "
+              className="text-4xl md:text-5xl font-bold text-slate-900 dark:text-white"
             >
               Let's Work Together
             </h1>
 
-            <p className="mt-3 text-lg text-slate-700 dark:text-gray-400">
-              Have a project or idea in mind? Let's talk.
-            </p>
+            <p className="mt-3 text-lg text-slate-700 dark:text-gray-400">Have a project or idea in mind? Let's talk.</p>
           </div>
         </ScrollReveal>
 
@@ -153,41 +142,14 @@ function Contact() {
 
           <ScrollReveal direction="left">
             <div
-              className="
-                h-full
-                rounded-3xl
-
-                bg-white/35
-                dark:bg-white/5
-
-                backdrop-blur-xl
-
-                border
-                border-slate-300/40
-                dark:border-white/10
-
-                p-6
-
-                transition-all duration-300
-
-                premium-card
-              "
+              className="h-full rounded-3xl bg-white/35 dark:bg-white/5 backdrop-blur-xl border border-slate-300/40 dark:border-white/10 p-6 transition-all duration-300 premium-card"
             >
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
-                Get In Touch
-              </h2>
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Get In Touch</h2>
 
               <p
-                className="
-                  mt-3
-                  text-base
-                  text-slate-700
-                  dark:text-gray-400
-                  leading-7
-                "
+                className="mt-3 text-base text-slate-700 dark:text-gray-400 leading-7"
               >
-                Whether you have a project idea, a business requirement, or
-                simply want to discuss an opportunity, feel free to reach out.
+                Whether you have a project idea, a business requirement, or simply want to discuss an opportunity, feel free to reach out.
               </p>
 
               <div className="mt-6 space-y-6">
@@ -195,69 +157,18 @@ function Contact() {
 
                 <a
                   href="mailto:Khanmonis77929@gmail.com"
-                  className="
-                    flex items-center gap-3
-
-                    rounded-2xl
-
-                    bg-white/35
-                    dark:bg-white/5
-
-                    border
-                    border-slate-300/40
-                    dark:border-white/10
-
-                    p-3
-
-                    transition-all duration-300
-
-                    hover:bg-white/50
-                    dark:hover:bg-white/10
-
-                    hover:border-cyan-500/40
-                    dark:hover:border-cyan-300/40
-
-                    hover:shadow-[0_0_20px_rgba(34,211,238,.16)]
-
-                    premium-card
-                  "
+                  className="flex items-center gap-3 rounded-2xl bg-white/35 dark:bg-white/5 border border-slate-300/40 dark:border-white/10 p-3 transition-all duration-300 hover:bg-white/50 dark:hover:bg-white/10 hover:border-cyan-500/40 dark:hover:border-cyan-300/40 hover:shadow-[0_0_20px_rgba(34,211,238,.16)] premium-card"
                 >
                   <div
-                    className="
-                      premium-card-icon
-
-                      w-10
-                      h-10
-
-                      rounded-xl
-
-                      bg-cyan-400/10
-
-                      border
-                      border-cyan-500/20
-                      dark:border-cyan-400/20
-
-                      flex
-                      items-center
-                      justify-center
-
-                      shrink-0
-                    "
+                    className="premium-card-icon w-10 h-10 rounded-xl bg-cyan-400/10 border border-cyan-500/20 dark:border-cyan-400/20 flex items-center justify-center shrink-0"
                   >
-                    <IoMdMailUnread
-                      size={20}
-                      className="text-cyan-600 dark:text-cyan-400"
-                    />
+                    <IoMdMailUnread size={20} className="text-cyan-600 dark:text-cyan-400" />
                   </div>
 
                   <div>
-                    <p className="text-xs text-slate-500 dark:text-gray-500">
-                      Email
-                    </p>
+                    <p className="text-xs text-slate-500 dark:text-gray-500">Email</p>
 
-                    <p className="text-sm text-slate-900 dark:text-white mt-1 break-all">
-                      Khanmonis77929@gmail.com
-                    </p>
+                    <p className="text-sm text-slate-900 dark:text-white mt-1 break-all">Khanmonis77929@gmail.com</p>
                   </div>
                 </a>
 
@@ -267,69 +178,18 @@ function Contact() {
                   href="https://www.linkedin.com/in/monis-khan-724887407"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="
-                    flex items-center gap-3
-
-                    rounded-2xl
-
-                    bg-white/35
-                    dark:bg-white/5
-
-                    border
-                    border-slate-300/40
-                    dark:border-white/10
-
-                    p-3
-
-                    transition-all duration-300
-
-                    hover:bg-white/50
-                    dark:hover:bg-white/10
-
-                    hover:border-cyan-500/40
-                    dark:hover:border-cyan-300/40
-
-                    hover:shadow-[0_0_20px_rgba(34,211,238,.16)]
-
-                    premium-card
-                  "
+                  className="flex items-center gap-3 rounded-2xl bg-white/35 dark:bg-white/5 border border-slate-300/40 dark:border-white/10 p-3 transition-all duration-300 hover:bg-white/50 dark:hover:bg-white/10 hover:border-cyan-500/40 dark:hover:border-cyan-300/40 hover:shadow-[0_0_20px_rgba(34,211,238,.16)] premium-card"
                 >
                   <div
-                    className="
-                      premium-card-icon
-
-                      w-10
-                      h-10
-
-                      rounded-xl
-
-                      bg-cyan-400/10
-
-                      border
-                      border-cyan-500/20
-                      dark:border-cyan-400/20
-
-                      flex
-                      items-center
-                      justify-center
-
-                      shrink-0
-                    "
+                    className="premium-card-icon w-10 h-10 rounded-xl bg-cyan-400/10 border border-cyan-500/20 dark:border-cyan-400/20 flex items-center justify-center shrink-0"
                   >
-                    <FaLinkedinIn
-                      size={20}
-                      className="text-cyan-600 dark:text-cyan-400"
-                    />
+                    <FaLinkedinIn size={20} className="text-cyan-600 dark:text-cyan-400" />
                   </div>
 
                   <div>
-                    <p className="text-xs text-slate-500 dark:text-gray-500">
-                      LinkedIn
-                    </p>
+                    <p className="text-xs text-slate-500 dark:text-gray-500">LinkedIn</p>
 
-                    <p className="text-sm text-slate-900 dark:text-white mt-1">
-                      Connect with me
-                    </p>
+                    <p className="text-sm text-slate-900 dark:text-white mt-1">Connect with me</p>
                   </div>
                 </a>
 
@@ -339,69 +199,18 @@ function Contact() {
                   href="https://github.com/MONIS-KHAN11"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="
-                    flex items-center gap-3
-
-                    rounded-2xl
-
-                    bg-white/35
-                    dark:bg-white/5
-
-                    border
-                    border-slate-300/40
-                    dark:border-white/10
-
-                    p-3
-
-                    transition-all duration-300
-
-                    hover:bg-white/50
-                    dark:hover:bg-white/10
-
-                    hover:border-cyan-500/40
-                    dark:hover:border-cyan-300/40
-
-                    hover:shadow-[0_0_20px_rgba(34,211,238,.16)]
-
-                    premium-card
-                  "
+                  className="flex items-center gap-3 rounded-2xl bg-white/35 dark:bg-white/5 border border-slate-300/40 dark:border-white/10 p-3 transition-all duration-300 hover:bg-white/50 dark:hover:bg-white/10 hover:border-cyan-500/40 dark:hover:border-cyan-300/40 hover:shadow-[0_0_20px_rgba(34,211,238,.16)] premium-card"
                 >
                   <div
-                    className="
-                      premium-card-icon
-
-                      w-10
-                      h-10
-
-                      rounded-xl
-
-                      bg-cyan-400/10
-
-                      border
-                      border-cyan-500/20
-                      dark:border-cyan-400/20
-
-                      flex
-                      items-center
-                      justify-center
-
-                      shrink-0
-                    "
+                    className="premium-card-icon w-10 h-10 rounded-xl bg-cyan-400/10 border border-cyan-500/20 dark:border-cyan-400/20 flex items-center justify-center shrink-0"
                   >
-                    <FaGithub
-                      size={20}
-                      className="text-cyan-600 dark:text-cyan-400"
-                    />
+                    <FaGithub size={20} className="text-cyan-600 dark:text-cyan-400" />
                   </div>
 
                   <div>
-                    <p className="text-xs text-slate-500 dark:text-gray-500">
-                      GitHub
-                    </p>
+                    <p className="text-xs text-slate-500 dark:text-gray-500">GitHub</p>
 
-                    <p className="text-sm text-slate-900 dark:text-white mt-1">
-                      View my work
-                    </p>
+                    <p className="text-sm text-slate-900 dark:text-white mt-1">View my work</p>
                   </div>
                 </a>
 
@@ -411,69 +220,18 @@ function Contact() {
                   href="https://www.instagram.com/thekhan.stack/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="
-                    flex items-center gap-3
-
-                    rounded-2xl
-
-                    bg-white/35
-                    dark:bg-white/5
-
-                    border
-                    border-slate-300/40
-                    dark:border-white/10
-
-                    p-3
-
-                    transition-all duration-300
-
-                    hover:bg-white/50
-                    dark:hover:bg-white/10
-
-                    hover:border-cyan-500/40
-                    dark:hover:border-cyan-300/40
-
-                    hover:shadow-[0_0_20px_rgba(34,211,238,.16)]
-
-                    premium-card
-                  "
+                  className="flex items-center gap-3 rounded-2xl bg-white/35 dark:bg-white/5 border border-slate-300/40 dark:border-white/10 p-3 transition-all duration-300 hover:bg-white/50 dark:hover:bg-white/10 hover:border-cyan-500/40 dark:hover:border-cyan-300/40 hover:shadow-[0_0_20px_rgba(34,211,238,.16)] premium-card"
                 >
                   <div
-                    className="
-                      premium-card-icon
-
-                      w-10
-                      h-10
-
-                      rounded-xl
-
-                      bg-cyan-400/10
-
-                      border
-                      border-cyan-500/20
-                      dark:border-cyan-400/20
-
-                      flex
-                      items-center
-                      justify-center
-
-                      shrink-0
-                    "
+                    className="premium-card-icon w-10 h-10 rounded-xl bg-cyan-400/10 border border-cyan-500/20 dark:border-cyan-400/20 flex items-center justify-center shrink-0"
                   >
-                    <FaInstagram
-                      size={20}
-                      className="text-cyan-600 dark:text-cyan-400"
-                    />
+                    <FaInstagram size={20} className="text-cyan-600 dark:text-cyan-400" />
                   </div>
 
                   <div>
-                    <p className="text-xs text-slate-500 dark:text-gray-500">
-                      Instagram
-                    </p>
+                    <p className="text-xs text-slate-500 dark:text-gray-500">Instagram</p>
 
-                    <p className="text-sm text-slate-900 dark:text-white mt-1">
-                      Follow me
-                    </p>
+                    <p className="text-sm text-slate-900 dark:text-white mt-1">Follow me</p>
                   </div>
                 </a>
               </div>
@@ -486,36 +244,11 @@ function Contact() {
 
           <ScrollReveal direction="right" delay={150}>
             <div
-              className="
-                relative
-                h-full
-
-                rounded-3xl
-
-                bg-white/35
-                dark:bg-white/5
-
-                backdrop-blur-xl
-
-                border
-                border-slate-300/40
-                dark:border-white/10
-
-                p-5
-                md:p-8
-
-                premium-card
-              "
+              className="relative h-full rounded-3xl bg-white/35 dark:bg-white/5 backdrop-blur-xl border border-slate-300/40 dark:border-white/10 p-5 md:p-8 premium-card"
             >
-              <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
-                Send a Message
-              </h2>
+              <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Send a Message</h2>
 
-              <form
-                className="mt-7 space-y-5"
-                onSubmit={handleSubmit}
-                noValidate
-              >
+              <form className="mt-7 space-y-5" onSubmit={handleSubmit} noValidate>
                 {/* =========================
                     NAME + PHONE
                 ========================= */}
@@ -525,16 +258,7 @@ function Contact() {
 
                   <div>
                     <label
-                      className="
-                        block
-                        text-xs
-                        font-semibold
-                        uppercase
-                        tracking-wider
-                        text-slate-600
-                        dark:text-gray-400
-                        mb-2
-                      "
+                      className="block text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-gray-400 mb-2"
                     >
                       Full Name
                     </label>
@@ -547,60 +271,17 @@ function Contact() {
                       placeholder="Your name"
                       required
                       autoComplete="name"
-                      className="
-                        w-full
-                        rounded-xl
-
-                        bg-white/45
-                        dark:bg-slate-950/40
-
-                        border
-                        border-slate-300/50
-                        dark:border-white/10
-
-                        px-4
-                        py-3
-
-                        text-sm
-                        text-slate-900
-                        dark:text-white
-
-                        placeholder-slate-400
-                        dark:placeholder-gray-500
-
-                        outline-none
-
-                        focus:border-cyan-500/60
-                        dark:focus:border-cyan-400/60
-
-                        focus:ring-1
-                        focus:ring-cyan-400/30
-
-                        transition-all
-                      "
+                      className="w-full rounded-xl bg-white/45 dark:bg-slate-950/40 border border-slate-300/50 dark:border-white/10 px-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 outline-none focus:border-cyan-500/60 dark:focus:border-cyan-400/60 focus:ring-1 focus:ring-cyan-400/30 transition-all"
                     />
 
-                    {errors.name && (
-                      <p className="mt-1 text-xs text-red-500 dark:text-red-400">
-                        {errors.name}
-                      </p>
-                    )}
+                    {errors.name && <p className="mt-1 text-xs text-red-500 dark:text-red-400">{errors.name}</p>}
                   </div>
 
                   {/* PHONE */}
 
                   <div>
                     <label
-                      className="
-                        block
-                        text-xs
-                        font-semibold
-                        uppercase
-                        tracking-wider
-                        text-slate-600
-                        dark:text-gray-400
-                        mb-2
-                      "
+                      className="block text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-gray-400 mb-2"
                     >
                       Phone
                     </label>
@@ -629,44 +310,10 @@ function Contact() {
                       maxLength={10}
                       autoComplete="tel"
                       title="Please enter a valid 10-digit phone number"
-                      className="
-                        w-full
-                        rounded-xl
-
-                        bg-white/45
-                        dark:bg-slate-950/40
-
-                        border
-                        border-slate-300/50
-                        dark:border-white/10
-
-                        px-4
-                        py-3
-
-                        text-sm
-                        text-slate-900
-                        dark:text-white
-
-                        placeholder-slate-400
-                        dark:placeholder-gray-500
-
-                        outline-none
-
-                        focus:border-cyan-500/60
-                        dark:focus:border-cyan-400/60
-
-                        focus:ring-1
-                        focus:ring-cyan-400/30
-
-                        transition-all
-                      "
+                      className="w-full rounded-xl bg-white/45 dark:bg-slate-950/40 border border-slate-300/50 dark:border-white/10 px-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 outline-none focus:border-cyan-500/60 dark:focus:border-cyan-400/60 focus:ring-1 focus:ring-cyan-400/30 transition-all"
                     />
 
-                    {errors.phone && (
-                      <p className="mt-1 text-xs text-red-500 dark:text-red-400">
-                        {errors.phone}
-                      </p>
-                    )}
+                    {errors.phone && <p className="mt-1 text-xs text-red-500 dark:text-red-400">{errors.phone}</p>}
                   </div>
                 </div>
 
@@ -679,16 +326,7 @@ function Contact() {
 
                   <div>
                     <label
-                      className="
-                        block
-                        text-xs
-                        font-semibold
-                        uppercase
-                        tracking-wider
-                        text-slate-600
-                        dark:text-gray-400
-                        mb-2
-                      "
+                      className="block text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-gray-400 mb-2"
                     >
                       Email Address
                     </label>
@@ -701,60 +339,17 @@ function Contact() {
                       placeholder="Enter your email"
                       required
                       autoComplete="email"
-                      className="
-                        w-full
-                        rounded-xl
-
-                        bg-white/45
-                        dark:bg-slate-950/40
-
-                        border
-                        border-slate-300/50
-                        dark:border-white/10
-
-                        px-4
-                        py-3
-
-                        text-sm
-                        text-slate-900
-                        dark:text-white
-
-                        placeholder-slate-400
-                        dark:placeholder-gray-500
-
-                        outline-none
-
-                        focus:border-cyan-500/60
-                        dark:focus:border-cyan-400/60
-
-                        focus:ring-1
-                        focus:ring-cyan-400/30
-
-                        transition-all
-                      "
+                      className="w-full rounded-xl bg-white/45 dark:bg-slate-950/40 border border-slate-300/50 dark:border-white/10 px-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 outline-none focus:border-cyan-500/60 dark:focus:border-cyan-400/60 focus:ring-1 focus:ring-cyan-400/30 transition-all"
                     />
 
-                    {errors.email && (
-                      <p className="mt-1 text-xs text-red-500 dark:text-red-400">
-                        {errors.email}
-                      </p>
-                    )}
+                    {errors.email && <p className="mt-1 text-xs text-red-500 dark:text-red-400">{errors.email}</p>}
                   </div>
 
                   {/* SERVICE */}
 
                   <div>
                     <label
-                      className="
-                        block
-                        text-xs
-                        font-semibold
-                        uppercase
-                        tracking-wider
-                        text-slate-600
-                        dark:text-gray-400
-                        mb-2
-                      "
+                      className="block text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-gray-400 mb-2"
                     >
                       Service Interested In
                     </label>
@@ -790,62 +385,35 @@ function Contact() {
                         focus:ring-1
                         focus:ring-cyan-400/30
 
-                        ${
-                          formData.service
-                            ? "text-slate-900 dark:text-white"
-                            : "text-slate-400 dark:text-gray-500"
-                        }
+                        ${formData.service ? "text-slate-900 dark:text-white" : "text-slate-400 dark:text-gray-500"}
                       `}
                     >
-                      <option
-                        value=""
-                        disabled
-                        className="bg-white dark:bg-slate-900 text-slate-500"
-                      >
+                      <option value="" disabled className="bg-white dark:bg-slate-900 text-slate-500">
                         Select a service
                       </option>
 
-                      <option
-                        value="portfolio"
-                        className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
-                      >
+                      <option value="portfolio" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
                         Portfolio Website
                       </option>
 
-                      <option
-                        value="business"
-                        className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
-                      >
+                      <option value="business" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
                         Business Website
                       </option>
 
-                      <option
-                        value="ecommerce"
-                        className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
-                      >
+                      <option value="ecommerce" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
                         E-commerce Website
                       </option>
 
-                      <option
-                        value="uiux"
-                        className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
-                      >
+                      <option value="uiux" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
                         UI/UX Design
                       </option>
 
-                      <option
-                        value="other"
-                        className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
-                      >
+                      <option value="other" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
                         Other
                       </option>
                     </select>
 
-                    {errors.service && (
-                      <p className="mt-1 text-xs text-red-500 dark:text-red-400">
-                        {errors.service}
-                      </p>
-                    )}
+                    {errors.service && <p className="mt-1 text-xs text-red-500 dark:text-red-400">{errors.service}</p>}
                   </div>
                 </div>
 
@@ -857,21 +425,9 @@ function Contact() {
                   <ScrollReveal direction="up">
                     <div>
                       <label
-                        className="
-                          block
-                          text-xs
-                          font-semibold
-                          uppercase
-                          tracking-wider
-                          text-slate-600
-                          dark:text-gray-400
-                          mb-2
-                        "
+                        className="block text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-gray-400 mb-2"
                       >
-                        Estimated Budget{" "}
-                        <span className="normal-case text-slate-500 dark:text-gray-500">
-                          (Optional)
-                        </span>
+                        Estimated Budget <span className="normal-case text-slate-500 dark:text-gray-500">(Optional)</span>
                       </label>
 
                       <select
@@ -904,47 +460,27 @@ function Contact() {
                           focus:ring-1
                           focus:ring-cyan-400/30
 
-                          ${
-                            formData.budget
-                              ? "text-slate-900 dark:text-white"
-                              : "text-slate-400 dark:text-gray-500"
-                          }
+                          ${formData.budget ? "text-slate-900 dark:text-white" : "text-slate-400 dark:text-gray-500"}
                         `}
                       >
-                        <option
-                          value=""
-                          disabled
-                          className="bg-white dark:bg-slate-900 text-slate-500"
-                        >
+                        <option value="" disabled className="bg-white dark:bg-slate-900 text-slate-500">
                           Select your budget range
                         </option>
 
-                        <option
-                          value="under-10k"
-                          className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
-                        >
-                          Under ₹14,999
+                        <option value="under-10k" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
+                          Under â‚¹14,999
                         </option>
 
-                        <option
-                          value="10k-25k"
-                          className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
-                        >
-                          ₹14,999 - ₹24,999
+                        <option value="10k-25k" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
+                          â‚¹14,999 - â‚¹24,999
                         </option>
 
-                        <option
-                          value="25k-50k"
-                          className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
-                        >
-                          ₹24,999 - ₹49,999
+                        <option value="25k-50k" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
+                          â‚¹24,999 - â‚¹49,999
                         </option>
 
-                        <option
-                          value="50k-plus"
-                          className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white"
-                        >
-                          ₹49,999 +
+                        <option value="50k-plus" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
+                          â‚¹49,999 +
                         </option>
                       </select>
                     </div>
@@ -957,16 +493,7 @@ function Contact() {
 
                 <div>
                   <label
-                    className="
-                      block
-                      text-xs
-                      font-semibold
-                      uppercase
-                      tracking-wider
-                      text-slate-600
-                      dark:text-gray-400
-                      mb-2
-                    "
+                    className="block text-xs font-semibold uppercase tracking-wider text-slate-600 dark:text-gray-400 mb-2"
                   >
                     Message
                   </label>
@@ -979,45 +506,10 @@ function Contact() {
                     placeholder="Tell me about your project..."
                     required
                     minLength={10}
-                    className="
-                      w-full
-                      rounded-xl
-
-                      bg-white/45
-                      dark:bg-slate-950/40
-
-                      border
-                      border-slate-300/50
-                      dark:border-white/10
-
-                      px-4
-                      py-3
-
-                      text-sm
-                      text-slate-900
-                      dark:text-white
-
-                      placeholder-slate-400
-                      dark:placeholder-gray-500
-
-                      outline-none
-                      resize-none
-
-                      focus:border-cyan-500/60
-                      dark:focus:border-cyan-400/60
-
-                      focus:ring-1
-                      focus:ring-cyan-400/30
-
-                      transition-all
-                    "
+                    className="w-full rounded-xl bg-white/45 dark:bg-slate-950/40 border border-slate-300/50 dark:border-white/10 px-4 py-3 text-sm text-slate-900 dark:text-white placeholder-slate-400 dark:placeholder-gray-500 outline-none resize-none focus:border-cyan-500/60 dark:focus:border-cyan-400/60 focus:ring-1 focus:ring-cyan-400/30 transition-all"
                   />
 
-                  {errors.message && (
-                    <p className="mt-1 text-xs text-red-500 dark:text-red-400">
-                      {errors.message}
-                    </p>
-                  )}
+                  {errors.message && <p className="mt-1 text-xs text-red-500 dark:text-red-400">{errors.message}</p>}
                 </div>
 
                 {/* =========================
@@ -1090,76 +582,20 @@ function Contact() {
 
               {showSuccess && (
                 <div
-                  className="
-                    absolute
-                    inset-0
-
-                    z-10
-
-                    flex
-                    items-center
-                    justify-center
-
-                    rounded-3xl
-
-                    bg-white/80
-                    dark:bg-slate-950/80
-
-                    backdrop-blur-sm
-                  "
+                  className="absolute inset-0 z-10 flex items-center justify-center rounded-3xl bg-white/80 dark:bg-slate-950/80 backdrop-blur-sm"
                 >
                   <div
-                    className="
-                      mx-6
-
-                      rounded-2xl
-
-                      border
-                      border-cyan-500/30
-                      dark:border-cyan-400/30
-
-                      bg-white/90
-                      dark:bg-slate-900
-
-                      p-6
-
-                      text-center
-
-                      shadow-[0_0_30px_rgba(34,211,238,.25)]
-                    "
+                    className="mx-6 rounded-2xl border border-cyan-500/30 dark:border-cyan-400/30 bg-white/90 dark:bg-slate-900 p-6 text-center shadow-[0_0_30px_rgba(34,211,238,.25)]"
                   >
                     <div
-                      className="
-                        mx-auto
-                        mb-3
-
-                        flex
-                        h-12
-                        w-12
-
-                        items-center
-                        justify-center
-
-                        rounded-full
-
-                        bg-cyan-400/15
-
-                        text-2xl
-
-                        text-cyan-600
-                        dark:text-cyan-400
-                      "
+                      className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-cyan-400/15 text-2xl text-cyan-600 dark:text-cyan-400"
                     >
-                      ✓
+                      âœ“
                     </div>
 
-                    <h3 className="text-xl font-bold text-slate-900 dark:text-white">
-                      Message Sent!
-                    </h3>
+                    <h3 className="text-xl font-bold text-slate-900 dark:text-white">Message Sent!</h3>
 
-                    <p className="mt-2 text-sm text-slate-600 dark:text-gray-400">
-                      Thanks! I will get back to you soon.
-                    </p>
+                    <p className="mt-2 text-sm text-slate-600 dark:text-gray-400">Thanks! I will get back to you soon.</p>
                   </div>
                 </div>
               )}

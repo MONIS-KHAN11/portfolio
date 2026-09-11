@@ -22,23 +22,7 @@ function ThemeToggle() {
 
   return (
     <div
-      className="
-        flex items-center
-        rounded-full
-        p-1
-
-        bg-white/45 dark:bg-white/10
-        backdrop-blur-xl
-
-        border border-slate-300/40 dark:border-white/10
-
-        shadow-sm
-
-        select-none
-        transition-all duration-300
-
-        hover:scale-105
-      "
+      className="flex items-center rounded-full p-1 bg-white/45 dark:bg-white/10 backdrop-blur-xl border border-slate-300/40 dark:border-white/10 shadow-sm select-none transition-all duration-300 hover:scale-105"
     >
       {/* ================= DARK MODE ================= */}
       <button

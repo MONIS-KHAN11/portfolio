@@ -1,22 +1,8 @@
-import {
-  Code2,
-  Globe,
-  Smartphone,
-  Monitor,
-  Server,
-  Database,
-} from "lucide-react";
+import { Code2, Globe, Smartphone, Monitor, Server, Database } from "lucide-react";
 
 import { FaHandsClapping, FaReact, FaNodeJs } from "react-icons/fa6";
 
-import {
-  SiTailwindcss,
-  SiMongodb,
-  SiNextdotjs,
-  SiRedux,
-  SiTypescript,
-  SiExpress,
-} from "react-icons/si";
+import { SiTailwindcss, SiMongodb, SiNextdotjs, SiRedux, SiTypescript, SiExpress } from "react-icons/si";
 
 import { Link } from "react-router-dom";
 import { useState } from "react";
@@ -70,90 +56,36 @@ function Hero() {
               {/* Hero Card */}
               <ScrollReveal direction="up">
                 <div
-                  className="
-                    premium-card
-
-                    w-full max-w-xl lg:w-150
-                    min-h-100
-                    rounded-4xl
-
-                    bg-white/60 dark:bg-white/5
-                    backdrop-blur-xl
-
-                    border border-slate-900/10 dark:border-white/10
-
-                    hover:border-cyan-500/40
-                    dark:hover:border-cyan-300/40
-
-                    shadow-lg dark:shadow-none
-
-                    transition-all duration-300
-
-                    lg:-ml-20
-                    mt-2 lg:mt-6
-                    select-none
-                  "
+                  className="premium-card w-full max-w-xl lg:w-150 min-h-100 rounded-4xl bg-white/60 dark:bg-white/5 backdrop-blur-xl border border-slate-900/10 dark:border-white/10 hover:border-cyan-500/40 dark:hover:border-cyan-300/40 shadow-lg dark:shadow-none transition-all duration-300 lg:-ml-20 mt-2 lg:mt-6 select-none"
                 >
                   {/* Greeting */}
                   <div className="flex items-center gap-3 mt-10 md:mt-16 ml-5 md:ml-6">
                     <FaHandsClapping
-                      className="
-                        premium-card-icon
-                        text-cyan-500
-                        dark:text-cyan-400
-                        text-3xl
-                      "
+                      className="premium-card-icon text-cyan-500 dark:text-cyan-400 text-3xl"
                     />
 
-                    <p className="text-cyan-500 dark:text-cyan-400 text-2xl md:text-3xl font-medium">
-                      Hello, I'm
-                    </p>
+                    <p className="text-cyan-500 dark:text-cyan-400 text-2xl md:text-3xl font-medium">Hello, I'm</p>
                   </div>
 
                   {/* Name */}
                   <h1
-                    className="
-                      mt-3
-                      text-4xl sm:text-5xl md:text-6xl
-                      font-bold
-                      leading-tight
-                      text-slate-900 dark:text-white
-                      ml-5 md:ml-8
-                      italic
-                      transition-colors duration-300
-                    "
+                    className="mt-3 text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-slate-900 dark:text-white ml-5 md:ml-8 italic transition-colors duration-300"
                   >
                     Monis Khan
                   </h1>
 
                   {/* Role */}
                   <h2
-                    className="
-                      mt-2
-                      text-2xl sm:text-3xl
-                      font-semibold
-                      text-slate-700 dark:text-gray-300
-                      ml-5 md:ml-8
-                      transition-colors duration-300
-                    "
+                    className="mt-2 text-2xl sm:text-3xl font-semibold text-slate-700 dark:text-gray-300 ml-5 md:ml-8 transition-colors duration-300"
                   >
                     Full Stack Developer
                   </h2>
 
                   {/* Description */}
                   <p
-                    className="
-                      mt-6
-                      text-base sm:text-xl md:text-2xl
-                      leading-7 md:leading-8
-                      text-slate-600 dark:text-gray-400
-                      ml-5 md:ml-8
-                      mr-5 md:mr-8
-                      transition-colors duration-300
-                    "
+                    className="mt-6 text-base sm:text-xl md:text-2xl leading-7 md:leading-8 text-slate-600 dark:text-gray-400 ml-5 md:ml-8 mr-5 md:mr-8 transition-colors duration-300"
                   >
-                    I build modern, responsive and scalable web applications
-                    with React, Node.js and MongoDB.
+                    I build modern, responsive and scalable web applications with React, Node.js and MongoDB.
                   </p>
                 </div>
               </ScrollReveal>
@@ -164,30 +96,7 @@ function Hero() {
                   {/* View Projects */}
                   <Link
                     to="/projects"
-                    className="
-                      inline-flex items-center justify-center
-                      px-8 md:px-22
-                      py-3
-                      rounded-full
-
-                      bg-white/60 dark:bg-white/5
-                      backdrop-blur-xl
-
-                      text-slate-900 dark:text-white
-                      font-medium
-
-                      border border-slate-900/10 dark:border-white/10
-
-                      transition-all duration-300
-
-                      hover:bg-cyan-400
-                      hover:text-black
-
-                      hover:border-cyan-300/40
-                      hover:shadow-[0_0_40px_rgba(34,211,238,.5)]
-
-                      ml-0 lg:-ml-18
-                    "
+                    className="inline-flex items-center justify-center px-8 md:px-22 py-3 rounded-full bg-white/60 dark:bg-white/5 backdrop-blur-xl text-slate-900 dark:text-white font-medium border border-slate-900/10 dark:border-white/10 transition-all duration-300 hover:bg-cyan-400 hover:text-black hover:border-cyan-300/40 hover:shadow-[0_0_40px_rgba(34,211,238,.5)] ml-0 lg:-ml-18"
                   >
                     View Projects
                   </Link>
@@ -213,11 +122,7 @@ function Hero() {
 
                       ml-0
 
-                      ${
-                        isDownloading
-                          ? "cursor-not-allowed bg-cyan-400/30 border-cyan-400/20 text-slate-700 dark:text-slate-800"
-                          : "text-slate-900 dark:text-white hover:bg-cyan-400 hover:text-black hover:border-cyan-300/40 hover:shadow-[0_0_40px_rgba(34,211,238,.5)]"
-                      }
+                      ${isDownloading ? "cursor-not-allowed bg-cyan-400/30 border-cyan-400/20 text-slate-700 dark:text-slate-800" : "text-slate-900 dark:text-white hover:bg-cyan-400 hover:text-black hover:border-cyan-300/40 hover:shadow-[0_0_40px_rgba(34,211,238,.5)]"}
                     `}
                   >
                     {isDownloading ? "Please wait..." : "Download Resume"}
@@ -229,46 +134,15 @@ function Hero() {
             {/* ================= RIGHT SIDE / ORBIT ================= */}
             <ScrollReveal direction="scale" delay={200}>
               <div
-                className="
-                  w-40
-                  h-40
-                  mr-0
-                  lg:mr-30
-                  relative
-                  scale-75
-                  sm:scale-90
-                  md:scale-100
-                "
+                className="w-40 h-40 mr-0 lg:mr-30 relative scale-75 sm:scale-90 md:scale-100"
               >
                 {/* Center Circle */}
                 <div
-                  className="
-                    premium-card
-
-                    w-40
-                    h-40
-                    rounded-full
-
-                    bg-white/60 dark:bg-white/5
-                    backdrop-blur-xl
-
-                    border border-cyan-500/20
-                    dark:border-cyan-400/20
-
-                    flex items-center justify-center
-
-                    shadow-[0_0_40px_rgba(34,211,238,.20)]
-
-                    transition-all duration-300
-                  "
+                  className="premium-card w-40 h-40 rounded-full bg-white/60 dark:bg-white/5 backdrop-blur-xl border border-cyan-500/20 dark:border-cyan-400/20 flex items-center justify-center shadow-[0_0_40px_rgba(34,211,238,.20)] transition-all duration-300"
                 >
                   <Code2
                     size={70}
-                    className="
-                      premium-card-icon
-                      text-cyan-500
-                      dark:text-cyan-400
-                    "
+                    className="premium-card-icon text-cyan-500 dark:text-cyan-400"
                   />
                 </div>
 
@@ -285,24 +159,7 @@ function Hero() {
                       >
                         <div className="orbit-reverse">
                           <div
-                            className="
-                              premium-card
-
-                              w-20 h-20
-                              rounded-full
-
-                              bg-white/60 dark:bg-white/10
-                              backdrop-blur-xl
-
-                              border border-slate-900/10
-                              dark:border-white/10
-
-                              flex items-center justify-center
-
-                              shadow-[0_0_40px_rgba(34,211,238,.20)]
-
-                              transition-all duration-300
-                            "
+                            className="premium-card w-20 h-20 rounded-full bg-white/60 dark:bg-white/10 backdrop-blur-xl border border-slate-900/10 dark:border-white/10 flex items-center justify-center shadow-[0_0_40px_rgba(34,211,238,.20)] transition-all duration-300"
                           >
                             <Icon
                               className={`
@@ -330,31 +187,15 @@ function Hero() {
           <ScrollReveal direction="up">
             <div className="text-center">
               <h2
-                className="
-                  mt-4
-                  text-3xl sm:text-4xl md:text-5xl
-                  font-bold
-                  text-slate-900 dark:text-white
-                  transition-colors duration-300
-                "
+                className="mt-4 text-3xl sm:text-4xl md:text-5xl font-bold text-slate-900 dark:text-white transition-colors duration-300"
               >
                 What I Build
               </h2>
 
               <p
-                className="
-                  mt-5 md:mt-6
-                  max-w-3xl mx-auto
-                  px-2
-                  text-base sm:text-lg md:text-xl
-                  text-slate-600 dark:text-gray-400
-                  leading-7 md:leading-8
-                  transition-colors duration-300
-                "
+                className="mt-5 md:mt-6 max-w-3xl mx-auto px-2 text-base sm:text-lg md:text-xl text-slate-600 dark:text-gray-400 leading-7 md:leading-8 transition-colors duration-300"
               >
-                I create modern websites, powerful web applications and scalable
-                backend systems with clean UI, smooth user experience and high
-                performance.
+                I create modern websites, powerful web applications and scalable backend systems with clean UI, smooth user experience and high performance.
               </p>
             </div>
           </ScrollReveal>
@@ -364,68 +205,24 @@ function Hero() {
             {/* Web Development */}
             <ScrollReveal direction="left">
               <div
-                className="
-                  premium-card
-                  group
-
-                  w-full max-w-2xl
-                  min-h-[320px] md:min-h-[280px]
-                  rounded-[32px]
-
-                  bg-white/60 dark:bg-white/5
-                  backdrop-blur-xl
-
-                  border border-slate-900/10 dark:border-white/10
-
-                  p-6 md:p-10
-
-                  flex flex-col items-center text-center
-                "
+                className="premium-card group w-full max-w-2xl min-h-[320px] md:min-h-[280px] rounded-[32px] bg-white/60 dark:bg-white/5 backdrop-blur-xl border border-slate-900/10 dark:border-white/10 p-6 md:p-10 flex flex-col items-center text-center"
               >
                 <div
-                  className="
-                    premium-card-icon
-
-                    w-14 h-14
-                    rounded-2xl
-
-                    bg-cyan-400/10
-                    border border-cyan-400/20
-
-                    flex items-center justify-center
-
-                    group-hover:bg-cyan-400/20
-                    transition-all duration-300
-                  "
+                  className="premium-card-icon w-14 h-14 rounded-2xl bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center group-hover:bg-cyan-400/20 transition-all duration-300"
                 >
-                  <Globe
-                    size={30}
-                    className="text-cyan-500 dark:text-cyan-400"
-                  />
+                  <Globe size={30} className="text-cyan-500 dark:text-cyan-400" />
                 </div>
 
                 <h3
-                  className="
-                    mt-4
-                    text-2xl md:text-3xl
-                    font-bold
-                    text-slate-900 dark:text-white
-                  "
+                  className="mt-4 text-2xl md:text-3xl font-bold text-slate-900 dark:text-white"
                 >
                   Web Development
                 </h3>
 
                 <p
-                  className="
-                    mt-4
-                    text-slate-600 dark:text-gray-400
-                    text-base md:text-lg
-                    leading-8
-                  "
+                  className="mt-4 text-slate-600 dark:text-gray-400 text-base md:text-lg leading-8"
                 >
-                  Building modern, responsive and high-performance web
-                  applications with clean architecture, scalable code and
-                  exceptional user experience.
+                  Building modern, responsive and high-performance web applications with clean architecture, scalable code and exceptional user experience.
                 </p>
               </div>
             </ScrollReveal>
@@ -433,67 +230,24 @@ function Hero() {
             {/* App Development */}
             <ScrollReveal direction="right" delay={120}>
               <div
-                className="
-                  premium-card
-                  group
-
-                  w-full max-w-2xl
-                  min-h-[320px] md:min-h-[280px]
-                  rounded-[32px]
-
-                  bg-white/60 dark:bg-white/5
-                  backdrop-blur-xl
-
-                  border border-slate-900/10 dark:border-white/10
-
-                  p-6 md:p-10
-
-                  flex flex-col items-center text-center
-                "
+                className="premium-card group w-full max-w-2xl min-h-[320px] md:min-h-[280px] rounded-[32px] bg-white/60 dark:bg-white/5 backdrop-blur-xl border border-slate-900/10 dark:border-white/10 p-6 md:p-10 flex flex-col items-center text-center"
               >
                 <div
-                  className="
-                    premium-card-icon
-
-                    w-14 h-14
-                    rounded-2xl
-
-                    bg-cyan-400/10
-                    border border-cyan-400/20
-
-                    flex items-center justify-center
-
-                    group-hover:bg-cyan-400/20
-                    transition-all duration-300
-                  "
+                  className="premium-card-icon w-14 h-14 rounded-2xl bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center group-hover:bg-cyan-400/20 transition-all duration-300"
                 >
-                  <Smartphone
-                    size={30}
-                    className="text-cyan-500 dark:text-cyan-400"
-                  />
+                  <Smartphone size={30} className="text-cyan-500 dark:text-cyan-400" />
                 </div>
 
                 <h3
-                  className="
-                    mt-4
-                    text-2xl md:text-3xl
-                    font-bold
-                    text-slate-900 dark:text-white
-                  "
+                  className="mt-4 text-2xl md:text-3xl font-bold text-slate-900 dark:text-white"
                 >
                   App Development
                 </h3>
 
                 <p
-                  className="
-                    mt-4
-                    text-slate-600 dark:text-gray-400
-                    text-base md:text-lg
-                    leading-8
-                  "
+                  className="mt-4 text-slate-600 dark:text-gray-400 text-base md:text-lg leading-8"
                 >
-                  Developing fast, scalable and cross-platform applications with
-                  modern design, optimized performance and maintainable code.
+                  Developing fast, scalable and cross-platform applications with modern design, optimized performance and maintainable code.
                 </p>
               </div>
             </ScrollReveal>
@@ -504,158 +258,51 @@ function Hero() {
             {/* Frontend */}
             <ScrollReveal direction="up" delay={100}>
               <div
-                className="
-                  premium-card
-                  group
-
-                  w-full
-                  rounded-4xl
-
-                  bg-white/60 dark:bg-white/5
-                  backdrop-blur-xl
-
-                  border border-slate-900/10 dark:border-white/10
-
-                  p-6
-
-                  justify-items-center
-                "
+                className="premium-card group w-full rounded-4xl bg-white/60 dark:bg-white/5 backdrop-blur-xl border border-slate-900/10 dark:border-white/10 p-6 justify-items-center"
               >
                 <div
-                  className="
-                    premium-card-icon
-
-                    w-12 h-12
-                    rounded-xl
-
-                    bg-cyan-400/10
-                    border border-cyan-400/20
-
-                    flex items-center justify-center
-
-                    group-hover:bg-cyan-400/20
-                    transition-all duration-300
-                  "
+                  className="premium-card-icon w-12 h-12 rounded-xl bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center group-hover:bg-cyan-400/20 transition-all duration-300"
                 >
-                  <Monitor
-                    size={26}
-                    className="text-cyan-500 dark:text-cyan-400"
-                  />
+                  <Monitor size={26} className="text-cyan-500 dark:text-cyan-400" />
                 </div>
 
-                <h3 className="mt-5 text-xl font-semibold text-slate-900 dark:text-white">
-                  Frontend
-                </h3>
+                <h3 className="mt-5 text-xl font-semibold text-slate-900 dark:text-white">Frontend</h3>
 
-                <p className="mt-3 text-slate-600 dark:text-gray-400 text-sm leading-6 text-center">
-                  React • Next.js • Tailwind CSS • HTML • CSS • JavaScript •
-                  TypeScript
-                </p>
+                <p className="mt-3 text-slate-600 dark:text-gray-400 text-sm leading-6 text-center">React â€¢ Next.js â€¢ Tailwind CSS â€¢ HTML â€¢ CSS â€¢ JavaScript â€¢ TypeScript</p>
               </div>
             </ScrollReveal>
 
             {/* Backend */}
             <ScrollReveal direction="up" delay={200}>
               <div
-                className="
-                  premium-card
-                  group
-
-                  w-full
-                  rounded-4xl
-
-                  bg-white/60 dark:bg-white/5
-                  backdrop-blur-xl
-
-                  border border-slate-900/10 dark:border-white/10
-
-                  p-6
-
-                  justify-items-center
-                "
+                className="premium-card group w-full rounded-4xl bg-white/60 dark:bg-white/5 backdrop-blur-xl border border-slate-900/10 dark:border-white/10 p-6 justify-items-center"
               >
                 <div
-                  className="
-                    premium-card-icon
-
-                    w-12 h-12
-                    rounded-xl
-
-                    bg-cyan-400/10
-                    border border-cyan-400/20
-
-                    flex items-center justify-center
-
-                    group-hover:bg-cyan-400/20
-                    transition-all duration-300
-                  "
+                  className="premium-card-icon w-12 h-12 rounded-xl bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center group-hover:bg-cyan-400/20 transition-all duration-300"
                 >
-                  <Server
-                    size={26}
-                    className="text-cyan-500 dark:text-cyan-400"
-                  />
+                  <Server size={26} className="text-cyan-500 dark:text-cyan-400" />
                 </div>
 
-                <h3 className="mt-5 text-xl font-semibold text-slate-900 dark:text-white">
-                  Backend
-                </h3>
+                <h3 className="mt-5 text-xl font-semibold text-slate-900 dark:text-white">Backend</h3>
 
-                <p className="mt-3 text-slate-600 dark:text-gray-400 text-sm leading-6 text-center">
-                  Node.js • Express.js • REST APIs • JWT • Authentication •
-                  Socket.io
-                </p>
+                <p className="mt-3 text-slate-600 dark:text-gray-400 text-sm leading-6 text-center">Node.js â€¢ Express.js â€¢ REST APIs â€¢ JWT â€¢ Authentication â€¢ Socket.io</p>
               </div>
             </ScrollReveal>
 
             {/* Database */}
             <ScrollReveal direction="up" delay={300}>
               <div
-                className="
-                  premium-card
-                  group
-
-                  w-full
-                  rounded-4xl
-
-                  bg-white/60 dark:bg-white/5
-                  backdrop-blur-xl
-
-                  border border-slate-900/10 dark:border-white/10
-
-                  p-6
-
-                  justify-items-center
-                "
+                className="premium-card group w-full rounded-4xl bg-white/60 dark:bg-white/5 backdrop-blur-xl border border-slate-900/10 dark:border-white/10 p-6 justify-items-center"
               >
                 <div
-                  className="
-                    premium-card-icon
-
-                    w-12 h-12
-                    rounded-xl
-
-                    bg-cyan-400/10
-                    border border-cyan-400/20
-
-                    flex items-center justify-center
-
-                    group-hover:bg-cyan-400/20
-                    transition-all duration-300
-                  "
+                  className="premium-card-icon w-12 h-12 rounded-xl bg-cyan-400/10 border border-cyan-400/20 flex items-center justify-center group-hover:bg-cyan-400/20 transition-all duration-300"
                 >
-                  <Database
-                    size={26}
-                    className="text-cyan-500 dark:text-cyan-400"
-                  />
+                  <Database size={26} className="text-cyan-500 dark:text-cyan-400" />
                 </div>
 
-                <h3 className="mt-5 text-xl font-semibold text-slate-900 dark:text-white">
-                  Database
-                </h3>
+                <h3 className="mt-5 text-xl font-semibold text-slate-900 dark:text-white">Database</h3>
 
-                <p className="mt-3 text-slate-600 dark:text-gray-400 text-sm leading-6 text-center">
-                  MongoDB • Firebase • MySQL • Cloud Storage • Database Design
-                </p>
+                <p className="mt-3 text-slate-600 dark:text-gray-400 text-sm leading-6 text-center">MongoDB â€¢ Firebase â€¢ MySQL â€¢ Cloud Storage â€¢ Database Design</p>
               </div>
             </ScrollReveal>
           </div>
@@ -665,67 +312,23 @@ function Hero() {
       {/* ================= CTA ================= */}
       <ScrollReveal direction="up" delay={150}>
         <div
-          className="
-            text-center
-            border-b border-slate-900/10 dark:border-white/10
-            pb-8 mb-8
-          "
+          className="text-center border-b border-slate-900/10 dark:border-white/10 pb-8 mb-8"
         >
           <h2
-            className="
-              text-3xl sm:text-4xl md:text-5xl
-              mt-12 md:mt-18
-              font-bold
-              text-slate-900 dark:text-white
-              px-4
-            "
+            className="text-3xl sm:text-4xl md:text-5xl mt-12 md:mt-18 font-bold text-slate-900 dark:text-white px-4"
           >
             Let's Build Something Amazing
           </h2>
 
           <p
-            className="
-              mt-4
-              mx-auto
-              max-w-2xl
-              px-4
-              text-base sm:text-lg md:text-xl
-              text-slate-600 dark:text-gray-400
-              leading-7 md:leading-8
-            "
+            className="mt-4 mx-auto max-w-2xl px-4 text-base sm:text-lg md:text-xl text-slate-600 dark:text-gray-400 leading-7 md:leading-8"
           >
-            Have an idea or project in mind? Let's work together and build
-            something modern, scalable and impactful.
+            Have an idea or project in mind? Let's work together and build something modern, scalable and impactful.
           </p>
 
           <Link
             to="/contact"
-            className="
-              inline-flex items-center justify-center
-
-              px-10 md:px-18
-              py-4
-              rounded-full
-
-              bg-white/60 dark:bg-white/5
-              backdrop-blur-xl
-
-              text-slate-900 dark:text-white
-              font-medium
-
-              transition-all duration-300
-
-              hover:bg-cyan-300
-              hover:text-black
-
-              border border-cyan-500/20
-              dark:border-cyan-400/20
-
-              hover:border-cyan-300/20
-              hover:shadow-[0_0_40px_rgba(34,211,238,.5)]
-
-              mt-4 mb-4
-            "
+            className="inline-flex items-center justify-center px-10 md:px-18 py-4 rounded-full bg-white/60 dark:bg-white/5 backdrop-blur-xl text-slate-900 dark:text-white font-medium transition-all duration-300 hover:bg-cyan-300 hover:text-black border border-cyan-500/20 dark:border-cyan-400/20 hover:border-cyan-300/20 hover:shadow-[0_0_40px_rgba(34,211,238,.5)] mt-4 mb-4"
           >
             Contact Me
           </Link>

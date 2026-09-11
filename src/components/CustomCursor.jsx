@@ -20,9 +20,7 @@ function CustomCursor() {
 
       const target = e.target;
 
-      const interactive = target.closest(
-        "a, button, [role='button'], input, textarea, select",
-      );
+      const interactive = target.closest("a, button, [role='button'], input, textarea, select");
 
       setHovering(!!interactive);
     };
@@ -78,11 +76,7 @@ function CustomCursor() {
         duration-200
         ease-out
 
-        ${
-          hovering
-            ? "w-8 h-8 opacity-40 shadow-[0_0_25px_rgba(34,211,238,0.9)]"
-            : "w-4 h-4 opacity-100 shadow-[0_0_12px_rgba(34,211,238,0.8)]"
-        }
+        ${hovering ? "w-8 h-8 opacity-40 shadow-[0_0_25px_rgba(34,211,238,0.9)]" : "w-4 h-4 opacity-100 shadow-[0_0_12px_rgba(34,211,238,0.8)]"}
       `}
     />
   );

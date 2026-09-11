@@ -128,11 +128,7 @@ html:not(.dark) body {
     content: "";
     position: absolute;
     inset: 0;
-    background: radial-gradient(
-      circle at 50% 0%,
-      rgba(34, 211, 238, 0.12),
-      transparent 55%
-    );
+    background: radial-gradient(circle at 50% 0%, rgba(34, 211, 238, 0.12), transparent 55%);
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.35s ease;

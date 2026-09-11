@@ -1,11 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-function ScrollReveal({
-  children,
-  className = "",
-  direction = "up",
-  delay = 0,
-}) {
+function ScrollReveal({ children, className="", direction = "up", delay = 0 }) {
   const ref = useRef(null);
   const [visible, setVisible] = useState(false);
 
@@ -24,7 +19,7 @@ function ScrollReveal({
       {
         threshold: 0.12,
         rootMargin: "0px 0px -50px 0px",
-      },
+      }
     );
 
     observer.observe(element);

@@ -3,22 +3,7 @@ import { useState } from "react";
 function ModeToggle({ mode, setMode }) {
   return (
     <div
-      className="
-        flex items-center
-        rounded-full
-        p-1
-
-        bg-white/45 dark:bg-white/10
-        backdrop-blur-xl
-
-        border border-slate-300/40 dark:border-white/10
-
-        shadow-sm
-
-        hover:scale-105
-        transition-all duration-300
-        select-none
-      "
+      className="flex items-center rounded-full p-1 bg-white/45 dark:bg-white/10 backdrop-blur-xl border border-slate-300/40 dark:border-white/10 shadow-sm hover:scale-105 transition-all duration-300 select-none"
     >
       {/* ================= DEVELOPER ================= */}
       <button

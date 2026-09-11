@@ -33,18 +33,7 @@
   position: absolute;
   inset: 0;
 
-  background:
-    radial-gradient(
-      circle at center,
-      rgba(34, 211, 238, 0.08),
-      transparent 35%
-    ),
-    radial-gradient(
-      circle at 20% 30%,
-      rgba(59, 130, 246, 0.05),
-      transparent 30%
-    ),
-    #020617;
+  background: radial-gradient(circle at center, rgba(34, 211, 238, 0.08), transparent 35%), radial-gradient(circle at 20% 30%, rgba(59, 130, 246, 0.05), transparent 30%), #020617;
 }
 
 /* =========================
@@ -402,12 +391,7 @@
 
   opacity: 0.04;
 
-  background: repeating-linear-gradient(
-    to bottom,
-    transparent 0px,
-    transparent 3px,
-    rgba(255, 255, 255, 0.15) 4px
-  );
+  background: repeating-linear-gradient(to bottom, transparent 0px, transparent 3px, rgba(255, 255, 255, 0.15) 4px);
 }
 
 /* =========================
