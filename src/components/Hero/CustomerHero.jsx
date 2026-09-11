@@ -1,17 +1,4 @@
-import {
-  Globe,
-  Smartphone,
-  Monitor,
-  Rocket,
-  Search,
-  Zap,
-  TrendingUp,
-  BriefcaseBusiness,
-  LayoutDashboard,
-  ShoppingCart,
-  Palette,
-} from "lucide-react";
-
+import {Globe,Smartphone,Monitor,Rocket,Search,Zap,TrendingUp,BriefcaseBusiness,LayoutDashboard,ShoppingCart,Palette,} from "lucide-react";
 import { Link } from "react-router-dom";
 import { FaHandsClapping } from "react-icons/fa6";
 import ScrollReveal from "../ScrollReveal";
@@ -66,115 +53,14 @@ function CustomerHero() {
         <section className="min-h-screen flex items-start lg:items-center py-24 sm:py-28 md:py-32 lg:py-0 overflow-hidden">
           <div className="max-w-7xl mx-auto w-full px-4 sm:px-6">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-24 lg:gap-8">
-             
               <div>
-
-                <div
-                  className="
-                    w-full
-                    max-w-xl
-                    lg:w-150
-                    min-h-100
-
-                    rounded-4xl
-
-                    bg-white/35
-                    dark:bg-white/5
-
-                    backdrop-blur-xl
-
-                    border
-                    border-slate-300/40
-                    dark:border-white/10
-
-                    hover:border-cyan-400/40
-                    dark:hover:border-cyan-300/40
-
-                    shadow-lg
-
-                    transition-all duration-500
-
-                    lg:-ml-20
-                    mt-2
-                    lg:mt-6
-
-                    select-none
-                    premium-card
-                  "
-                >
-
+                <div className="w-full max-w-xl lg:w-150 min-h-100 rounded-4xl bg-white/35 dark:bg-white/5 backdrop-blur-xl border border-slate-300/40 dark:border-white/10 hover:border-cyan-400/40 dark:hover:border-cyan-300/40 shadow-lg transition-all duration-500 lg:-ml-20 mt-2 lg:mt-6 select-none premium-card">
                   <div className="flex items-center gap-3 mt-10 md:mt-16 ml-5 md:ml-8">
-                    <FaHandsClapping
-                      className="
-                        text-cyan-600
-                        dark:text-cyan-400
-                        text-2xl
-                        md:text-3xl
-                      "
-                    />
-
-                    <p
-                      className="
-                        text-cyan-700
-                        dark:text-cyan-400
-                        text-2xl
-                        md:text-3xl
-                        font-medium
-                      "
-                    >
-                      Hello, I'm
-                    </p>
+                    <FaHandsClapping className=" text-cyan-600 dark:text-cyan-400 text-2xl md:text-3xl"/>
+                    <p className="text-cyan-700 dark:text-cyan-400 text-2xl md:text-3xl font-medium">Hello, I'm</p>
                   </div>
-
-                  <h1
-                    className="
-                      mt-3
-
-                      text-4xl
-                      sm:text-5xl
-                      md:text-6xl
-
-                      font-bold
-                      leading-tight
-
-                      text-slate-900
-                      dark:text-white
-
-                      ml-5
-                      md:ml-8
-
-                      italic
-
-                      transition-colors duration-300
-                    "
-                  >
-                    Monis Khan
-                  </h1>
-
-                  <h2
-                    className="
-                      mt-2
-
-                      text-xl
-                      sm:text-2xl
-                      md:text-3xl
-
-                      font-semibold
-                      leading-tight
-
-                      text-slate-800
-                      dark:text-gray-300
-
-                      ml-5
-                      md:ml-8
-                      mr-5
-                      md:mr-8
-
-                      transition-colors duration-300
-                    "
-                  >
-                    Digital Solutions That Grow Your Business
-                  </h2>
+                  <h1 className="mt-3 text-4xl sm:text-5xl md:text-6xl font-bold leading-tight text-slate-900 dark:text-white ml-5 md:ml-8 italic transition-colors duration-300">Monis Khan</h1>
+                  <h2 className="mt-2 text-xl sm:text-2xl md:text-3xl font-semibold leading-tight text-slate-800 dark:text-gray-300 ml-5 md:ml-8 mr-5 md:mr-8 transition-colors duration-300">Digital Solutions That Grow Your Business</h2>
 
 
                   <p
