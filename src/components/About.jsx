@@ -125,7 +125,7 @@ function About() {
   const [showIconFallback, setShowIconFallback] = useState(false);
 
   return (
-    <section className="relative min-h-screen py-24 md:py-28 overflow-hidden">
+    <section className="relative min-h-screen py-16 md:py-20 overflow-hidden">
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div
           className="absolute -top-32 -left-20 h-72 w-72 sm:h-96 sm:w-96 rounded-full bg-cyan-400/10 blur-3xl"
@@ -242,7 +242,7 @@ function About() {
             STATS
         ========================= */}
         <ScrollReveal direction="up" delay={100}>
-          <div className="mt-16 grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+          <div className="mt-12 grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
             {stats.map((s) => (
               <div
                 key={s.label}
@@ -260,7 +260,7 @@ function About() {
             ACADEMIC JOURNEY
         ========================= */}
         <ScrollReveal direction="up" delay={100}>
-          <div className="mt-20">
+          <div className="mt-16">
             <h3
               className="mt-4 text-2xl md:text-3xl font-bold text-slate-900 dark:text-white"
             >
@@ -313,7 +313,7 @@ function About() {
             SKILLS
         ========================= */}
         <ScrollReveal direction="up" delay={100}>
-          <div className="mt-24 grid lg:grid-cols-5 gap-10 lg:gap-16 items-start">
+          <div className="mt-20 grid lg:grid-cols-5 gap-10 lg:gap-16 items-start">
             {/* CORE SKILLS */}
             <div className="lg:col-span-2">
               <span

@@ -16,25 +16,28 @@ function Navbar({ mode, setMode }) {
 
   return (
     <nav
-      className="fixed top-0 left-0 w-full z-50 px-4 md:px-6 py-4 bg-blue-50/55 dark:bg-slate-950/20 backdrop-blur-xl border-b border-slate-300/40 dark:border-white/10 shadow-lg transition-all duration-300"
+      className="fixed top-0 left-0 w-full z-50 px-3 sm:px-4 md:px-6 py-4 bg-blue-50/55 dark:bg-slate-950/20 backdrop-blur-xl border-b border-slate-300/40 dark:border-white/10 shadow-lg transition-all duration-300"
     >
       {/* ================= NAVBAR ================= */}
       <div className="flex items-center justify-between">
         {/* ================= LEFT SIDE / LOGO ================= */}
-        <div
-          className="flex items-center gap-2 md:gap-3 px-4 md:px-6 py-1 rounded-full bg-white/45 dark:bg-white/5 backdrop-blur-xl border border-slate-300/40 dark:border-white/10 shadow-lg hover:bg-white/65 dark:hover:bg-white/10 transition-all duration-300 mt-4 hover:shadow-[0_0_40px_rgba(34,211,238,0.30)] hover:border-cyan-400/40 dark:hover:border-cyan-300/40 hover:scale-105"
+        <NavLink
+          to="/"
+          aria-label="KhanCodeX home"
+          onClick={closeMenu}
+          className="flex items-center gap-1.5 sm:gap-2 md:gap-3 px-3 sm:px-4 md:px-6 py-1 rounded-full bg-white/45 dark:bg-white/5 backdrop-blur-xl border border-slate-300/40 dark:border-white/10 shadow-lg hover:bg-white/65 dark:hover:bg-white/10 transition-all duration-300 mt-4 hover:shadow-[0_0_40px_rgba(34,211,238,0.30)] hover:border-cyan-400/40 dark:hover:border-cyan-300/40 md:hover:scale-105"
         >
           <Code2
-            size={24}
+            size={20}
             className="md:w-[30px] md:h-[30px] text-cyan-600 dark:text-cyan-300 transition-colors duration-300"
           />
 
           <h1
-            className="text-xl md:text-3xl font-semibold text-slate-900 dark:text-white select-none transition-colors duration-300"
+            className="text-lg sm:text-xl md:text-3xl font-semibold text-slate-900 dark:text-white select-none transition-colors duration-300"
           >
             KhanCodeX
           </h1>
-        </div>
+        </NavLink>
 
         {/* ================= DESKTOP NAV ================= */}
         <div
@@ -118,7 +121,7 @@ function Navbar({ mode, setMode }) {
         </div>
 
         {/* ================= MOBILE RIGHT SIDE ================= */}
-        <div className="flex md:hidden items-center gap-2 mt-4">
+        <div className="flex md:hidden items-center gap-1 sm:gap-2 mt-4">
           {/* Dark / Light */}
           <ThemeToggle />
 

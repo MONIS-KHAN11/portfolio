@@ -113,7 +113,7 @@ function Contact() {
   };
 
   return (
-    <section className="min-h-screen flex items-center py-14 z-50 mt-16">
+    <section className="min-h-screen flex items-center py-10 z-50 mt-12">
       <div className="max-w-5xl mx-auto w-full px-6">
         {/* =========================
             HEADING

@@ -32,7 +32,7 @@ function ThemeToggle() {
         className={`
           flex items-center justify-center
 
-          w-10 h-9
+          w-9 sm:w-10 h-9
           rounded-full
 
           transition-all duration-300
@@ -71,7 +71,7 @@ function ThemeToggle() {
         className={`
           flex items-center justify-center
 
-          w-10 h-9
+          w-9 sm:w-10 h-9
           rounded-full
 
           transition-all duration-300

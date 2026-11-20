@@ -50,7 +50,7 @@ function Service() {
   };
 
   return (
-    <section className="pt-28 sm:pt-32 pb-12 sm:pb-16 overflow-hidden">
+    <section className="pt-24 sm:pt-28 pb-10 sm:pb-12 overflow-hidden">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* =========================
             HEADING
@@ -68,7 +68,7 @@ function Service() {
         {/* =========================
             SERVICES
         ========================= */}
-        <div className="mt-10 sm:mt-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
+        <div className="mt-8 sm:mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6">
           {services.map(({ title, description, Icon, features }, index) => (
             <ScrollReveal key={title} direction="up" delay={index * 100}>
               <div

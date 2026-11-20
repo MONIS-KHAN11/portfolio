@@ -48,14 +48,14 @@ function Hero() {
   return (
     <>
       {/* ================= HERO ================= */}
-      <section className="min-h-screen flex items-start lg:items-center py-28 md:py-32 lg:py-0 overflow-hidden">
+      <section className="min-h-screen flex items-start lg:items-center pt-28 pb-16 sm:pb-20 md:pt-32 md:pb-20 lg:py-0 overflow-hidden">
         <div className="max-w-7xl mx-auto w-full px-4 sm:px-6">
           <div className="flex flex-col lg:flex-row items-center justify-between gap-20 lg:gap-8">
             {/* ================= LEFT SIDE ================= */}
             <div>
               {/* Hero Card */}
               <ScrollReveal direction="up">
-                <div className="premium-card w-full max-w-xl lg:w-150 min-h-100 rounded-4xl bg-white/60 dark:bg-white/5 backdrop-blur-xl border border-slate-900/10 dark:border-white/10 hover:border-cyan-500/40 dark:hover:border-cyan-300/40 shadow-lg dark:shadow-none transition-all duration-300 lg:-ml-20 mt-2 lg:mt-6 select-none">
+                <div className="premium-card w-full max-w-xl lg:w-150 min-h-[24rem] sm:min-h-[25rem] rounded-4xl bg-white/60 dark:bg-white/5 backdrop-blur-xl border border-slate-900/10 dark:border-white/10 hover:border-cyan-500/40 dark:hover:border-cyan-300/40 shadow-lg dark:shadow-none transition-all duration-300 lg:-ml-20 mt-2 lg:mt-6 pb-6 select-none">
                   {/* Greeting */}
                   <div className="flex items-center gap-3 mt-10 md:mt-16 ml-5 md:ml-6">
                     <FaHandsClapping className="premium-card-icon text-cyan-500 dark:text-cyan-400 text-3xl" />
@@ -76,7 +76,7 @@ function Hero() {
 
               {/* Buttons */}
               <ScrollReveal direction="up" delay={150}>
-                <div className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-4 w-full px-5 md:px-0">
+                <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-4 w-full px-5 md:px-0">
                   {/* View Projects */}
                   <Link to="/projects" className="inline-flex items-center justify-center px-8 md:px-22 py-3 rounded-full bg-white/60 dark:bg-white/5 backdrop-blur-xl text-slate-900 dark:text-white font-medium border border-slate-900/10 dark:border-white/10 transition-all duration-300 hover:bg-cyan-400 hover:text-black hover:border-cyan-300/40 hover:shadow-[0_0_40px_rgba(34,211,238,.5)] ml-0 lg:-ml-18">
                     View Projects

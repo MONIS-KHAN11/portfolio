@@ -87,7 +87,7 @@ function ProjectShowcase() {
   const features = ["Responsive Design", "Modern UI", "Fast Performance", "Dark Theme"];
 
   return (
-    <section className="min-h-screen py-28">
+    <section className="min-h-screen py-20 md:py-24">
       <div className="max-w-7xl mx-auto px-6">
         {/* ================= SECTION HEADER ================= */}
 
@@ -116,7 +116,7 @@ function ProjectShowcase() {
         {/* ================= PROJECT ================= */}
 
         <div
-          className="mt-16 lg:mt-20 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center"
+          className="mt-12 lg:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 items-center"
         >
           {/* ================= LEFT SIDE DETAILS ================= */}
 

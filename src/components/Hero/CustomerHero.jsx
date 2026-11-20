@@ -50,11 +50,11 @@ function CustomerHero() {
   return (
     <>
       <ScrollReveal direction="up">
-        <section className="min-h-screen flex items-start lg:items-center py-24 sm:py-28 md:py-32 lg:py-0 overflow-hidden">
+        <section className="min-h-screen flex items-start lg:items-center pt-28 pb-16 sm:pb-20 md:pt-32 md:pb-20 lg:py-0 overflow-hidden">
           <div className="max-w-7xl mx-auto w-full px-4 sm:px-6">
-            <div className="flex flex-col lg:flex-row items-center justify-between gap-24 lg:gap-8">
+            <div className="flex flex-col lg:flex-row items-center justify-between gap-20 lg:gap-8">
               <div>
-                <div className="w-full max-w-xl lg:w-150 min-h-100 rounded-4xl bg-white/35 dark:bg-white/5 backdrop-blur-xl border border-slate-300/40 dark:border-white/10 hover:border-cyan-400/40 dark:hover:border-cyan-300/40 shadow-lg transition-all duration-500 lg:-ml-20 mt-2 lg:mt-6 select-none premium-card">
+                <div className="w-full max-w-xl lg:w-150 min-h-[24rem] sm:min-h-[25rem] rounded-4xl bg-white/35 dark:bg-white/5 backdrop-blur-xl border border-slate-300/40 dark:border-white/10 hover:border-cyan-400/40 dark:hover:border-cyan-300/40 shadow-lg transition-all duration-500 lg:-ml-20 mt-2 lg:mt-6 pb-6 select-none premium-card">
                   <div className="flex items-center gap-3 mt-10 md:mt-16 ml-5 md:ml-8">
                     <FaHandsClapping className="text-cyan-600 dark:text-cyan-400 text-2xl md:text-3xl" />
                     <p className="text-cyan-700 dark:text-cyan-400 text-2xl md:text-3xl font-medium">Hello, I'm</p>
@@ -69,7 +69,7 @@ function CustomerHero() {
                   </p>
                 </div>
 
-                <div className="mt-8 md:mt-10 flex flex-col sm:flex-row gap-4 w-full px-5 md:px-0">
+                <div className="mt-6 md:mt-8 flex flex-col sm:flex-row gap-4 w-full px-5 md:px-0">
                   <Link
                     to="/contact?quote=true"
                     className="inline-flex items-center justify-center w-full sm:w-auto px-8 md:px-22 py-3 rounded-full bg-white/40 dark:bg-white/5 backdrop-blur-xl text-slate-800 dark:text-white font-medium border border-slate-300/40 dark:border-white/10 transition-all duration-300 hover:scale-105 hover:bg-cyan-400 hover:text-black hover:border-cyan-300 hover:shadow-[0_0_40px_rgba(34,211,238,.5)] ml-0 lg:-ml-18"
