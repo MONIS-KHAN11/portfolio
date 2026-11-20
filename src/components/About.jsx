@@ -104,18 +104,18 @@ function About() {
       degree: "Senior Secondary (Class XII)",
       institution: "RBSE",
       year: "2022",
-      details: "Arts with Computer Science â€” Built a foundation in programming and web development.",
+      details: "Arts with Computer Science ” Built a foundation in programming and web development.",
     },
     {
       degree: "Bachelor of Computer Applications",
       institution: "Mohanlal Sukhadia University, Udaipur (Raj)",
-      year: "2023 â€” 2026",
+      year: "2023 - 2026",
       details: "Core CS fundamentals, web development, DBMS, OOP, and project-based learning.",
     },
     {
       degree: "Master Of Computer Applications",
       institution: "Janardan Rai Nagar Rajasthan Vidyapeeth University, Udaipur (Raj)",
-      year: "2026 â€” Present",
+      year: "2026 - Present",
       details: "Currently pursuing MCA with a focus on full-stack development.",
     },
   ];

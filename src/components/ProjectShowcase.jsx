@@ -185,9 +185,7 @@ function ProjectShowcase() {
                           className="flex flex-wrap gap-2 text-slate-600 dark:text-gray-400 text-sm"
                         >
                           <span>React</span>
-                          <span>â€¢</span>
                           <span>Tailwind CSS</span>
-                          <span>â€¢</span>
                           <span>JavaScript</span>
                         </div>
                       </div>
@@ -205,7 +203,6 @@ function ProjectShowcase() {
                           className="flex flex-wrap gap-2 text-slate-600 dark:text-gray-400 text-sm"
                         >
                           <span>Node.js</span>
-                          <span>â€¢</span>
                           <span>Express.js</span>
                         </div>
                       </div>

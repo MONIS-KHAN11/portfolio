@@ -102,7 +102,7 @@ function CustomerHero() {
                   </div>
 
                   <div
-                    className="absolute inset-0 flex items-center justify-center animate-[spin_20s_linear_infinite]"
+                    className="hero-skill-orbit absolute inset-0 flex items-center justify-center animate-[spin_20s_linear_infinite]"
                   >
                     <div className="relative w-40 h-40">
                       {customerSkills.map(({ Icon, color, angle }, index) => (
@@ -297,7 +297,7 @@ function CustomerHero() {
       <ScrollReveal direction="up" delay={100}>
         <div className="text-center border-b border-slate-300/40 dark:border-white/10 pb-8 mb-8 transition-colors duration-500">
           <h2 className="text-3xl sm:text-4xl md:text-5xl mt-12 md:mt-18 font-bold text-slate-900 dark:text-white px-4">Ready to Grow Your Business Online?</h2>
-          <p className="mt-4 mx-auto max-w-2xl px-4 text-base sm:text-lg md:text-xl text-slate-700 dark:text-gray-400 leading-7 md:leading-8">Letâ€™s turn your idea into a modern digital experience that helps your business attract customers and stand out online.</p>
+          <p className="mt-4 mx-auto max-w-2xl px-4 text-base sm:text-lg md:text-xl text-slate-700 dark:text-gray-400 leading-7 md:leading-8">Let's turn your idea into a modern digital experience that helps your business attract customers and stand out online.</p>
           <Link to="/contact?quote=true" className="inline-flex items-center justify-center w-auto px-10 md:px-18 py-4 rounded-full bg-white/40 dark:bg-white/5 backdrop-blur-xl text-slate-800 dark:text-white font-medium border border-cyan-400/30 dark:border-cyan-400/20 transition-all duration-300 hover:bg-cyan-400 hover:text-black hover:scale-105 hover:border-cyan-300 hover:shadow-[0_0_40px_rgba(34,211,238,.5)] mt-4 mb-4">
             Start Your Project
           </Link>

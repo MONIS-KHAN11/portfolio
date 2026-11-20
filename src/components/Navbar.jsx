@@ -125,8 +125,10 @@ function Navbar({ mode, setMode }) {
           {/* Hamburger */}
           <button
             type="button"
-            onClick={() => setMenuOpen(!menuOpen)}
+            onClick={() => setMenuOpen((isOpen) => !isOpen)}
             aria-label={menuOpen ? "Close menu" : "Open menu"}
+            aria-expanded={menuOpen}
+            aria-controls="mobile-navigation"
             className="w-11 h-11 flex items-center justify-center rounded-full bg-white/45 dark:bg-white/5 backdrop-blur-xl border border-slate-300/40 dark:border-white/10 text-slate-900 dark:text-white transition-all duration-300 hover:bg-white/65 dark:hover:bg-white/10 hover:text-cyan-600 dark:hover:text-cyan-300 hover:border-cyan-500/40 dark:hover:border-cyan-300/40 hover:shadow-[0_0_25px_rgba(34,211,238,0.30)]"
           >
             {menuOpen ? <X size={22} /> : <Menu size={22} />}
@@ -137,6 +139,7 @@ function Navbar({ mode, setMode }) {
       {/* ================= MOBILE MENU ================= */}
       {menuOpen && (
         <div
+          id="mobile-navigation"
           className="md:hidden mt-4 mx-1 p-4 rounded-3xl bg-blue-50/90 dark:bg-slate-950/95 backdrop-blur-xl border border-slate-300/40 dark:border-white/10 shadow-[0_0_40px_rgba(34,211,238,0.15)] transition-all duration-300"
         >
           <div className="flex flex-col gap-2">

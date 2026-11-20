@@ -34,15 +34,15 @@ function SplashScreen({ onComplete }) {
 
           setTimeout(() => {
             setShowRole(true);
-          }, 200);
+          }, 100);
         }
-      }, 75);
-    }, 500);
+      }, 45);
+    }, 100);
 
     // Glitch near the end
     const glitchTimer = setTimeout(() => {
       setGlitch(true);
-    }, 2150);
+    }, 1200);
 
     // Exit splash
     const exitTimer = setTimeout(() => {
@@ -51,7 +51,7 @@ function SplashScreen({ onComplete }) {
       setTimeout(() => {
         onComplete();
       }, 700);
-    }, 2700);
+    }, 1500);
 
     return () => {
       clearTimeout(typingStart);

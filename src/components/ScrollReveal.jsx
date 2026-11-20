@@ -18,7 +18,7 @@ function ScrollReveal({ children, className="", direction = "up", delay = 0 }) {
       },
       {
         threshold: 0.12,
-        rootMargin: "0px 0px -50px 0px",
+        rootMargin: "0px 0px 96px 0px",
       }
     );
 
@@ -28,13 +28,13 @@ function ScrollReveal({ children, className="", direction = "up", delay = 0 }) {
   }, []);
 
   const directionClasses = {
-    up: visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10",
+    up: visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-5",
 
-    down: visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-10",
+    down: visible ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-5",
 
-    left: visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-10",
+    left: visible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-5",
 
-    right: visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-10",
+    right: visible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-5",
 
     scale: visible ? "opacity-100 scale-100" : "opacity-0 scale-95",
   };
@@ -46,10 +46,9 @@ function ScrollReveal({ children, className="", direction = "up", delay = 0 }) {
         transitionDelay: `${delay}ms`,
       }}
       className={`
-        transition-all
-        duration-700
+        transition-[opacity,transform]
+        duration-500
         ease-out
-        will-change-transform
         ${directionClasses[direction] || directionClasses.up}
         ${className}
       `}

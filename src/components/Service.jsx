@@ -7,7 +7,7 @@ const services = [
   {
     title: "Business Website",
     description: "A professional website that helps your business build trust and attract more customers.",
-    Icon: Globe,
+    Icon: Globe ,
     features: ["Modern responsive design", "Business-focused pages", "Mobile friendly layout", "Contact & enquiry sections"],
   },
   {
@@ -134,7 +134,7 @@ function Service() {
 
                   {/* Bottom */}
                   <div className="mt-auto pt-6">
-                    <span className="text-sm text-cyan-600 dark:text-cyan-300">View Details â†’</span>
+                    <span className="text-sm text-cyan-600 dark:text-cyan-300">View Details at</span>
                   </div>
                 </div>
 
@@ -189,7 +189,7 @@ function Service() {
                           <div
                             className="mt-1 w-5 h-5 rounded-full bg-cyan-400/10 flex items-center justify-center shrink-0"
                           >
-                            <span className="text-cyan-600 dark:text-cyan-300 text-xs">âœ“</span>
+                            <span className="text-cyan-600 dark:text-cyan-300 text-xs">✓</span>
                           </div>
 
                           <p className="text-sm sm:text-base text-slate-700 dark:text-gray-300">{feature}</p>

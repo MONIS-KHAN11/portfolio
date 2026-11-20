@@ -9,9 +9,12 @@ html {
 body {
   margin: 0;
   min-width: 320px;
-  transition:
-    background-color 0.4s ease,
-    color 0.4s ease;
+}
+
+html.theme-changing *,
+html.theme-changing *::before,
+html.theme-changing *::after {
+  transition-duration: 0s !important;
 }
 
 @media (min-width: 768px) {
@@ -38,6 +41,13 @@ body {
   textarea,
   select {
     cursor: auto;
+  }
+}
+
+@media (max-width: 767px), (pointer: coarse) {
+  .custom-cursor,
+  .cursor-glow {
+    display: none;
   }
 }
 
@@ -107,6 +117,12 @@ html:not(.dark) body {
 
 .orbit-reverse {
   animation: orbitReverse 4s linear infinite;
+}
+
+@media (max-width: 767px) {
+  .hero-skill-orbit .orbit-reverse {
+    animation: none !important;
+  }
 }
 
 /* ================================

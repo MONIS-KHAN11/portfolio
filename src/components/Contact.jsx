@@ -468,19 +468,19 @@ function Contact() {
                         </option>
 
                         <option value="under-10k" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
-                          Under â‚¹14,999
+                          Under ₹14,999
                         </option>
 
                         <option value="10k-25k" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
-                          â‚¹14,999 - â‚¹24,999
+                          ₹14,999 - ₹24,999
                         </option>
 
                         <option value="25k-50k" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
-                          â‚¹24,999 - â‚¹49,999
+                          ₹24,999 - ₹49,999
                         </option>
 
                         <option value="50k-plus" className="bg-white dark:bg-slate-900 text-slate-900 dark:text-white">
-                          â‚¹49,999 +
+                          ₹49,999 +
                         </option>
                       </select>
                     </div>
@@ -590,7 +590,7 @@ function Contact() {
                     <div
                       className="mx-auto mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-cyan-400/15 text-2xl text-cyan-600 dark:text-cyan-400"
                     >
-                      âœ“
+                      ✓
                     </div>
 
                     <h3 className="text-xl font-bold text-slate-900 dark:text-white">Message Sent!</h3>
